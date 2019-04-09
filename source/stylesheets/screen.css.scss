@@ -194,6 +194,16 @@ html, body {
       text-decoration: none;
     }
   }
+
+  .toc-h1[data-title="Getting started"], .toc-h1[data-title="Affirm core"], .toc-h1[data-title="Affirm cards"], .toc-h1[data-title="Telesales"], .toc-h1[data-title="On-site messaging"], .toc-h1[data-title="Dashboard"], .toc-h1[data-title="Reporting"], .toc-h1[data-title="Development"], .toc-h1[data-title="Partners"], .toc-h1[data-title="Legal"], .toc-h1[data-title="API Reference"] {
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid $nav-footer-border-color;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none
+  }
 }
 
 .toc-link, .toc-footer li {
@@ -505,6 +515,22 @@ html, body {
   }
 }
 
+span.opt {
+  display:block;
+}
+
+span.req {
+  display:block;
+}
+
+.video-image-width img {
+  max-width: 69%;
+  padding-top:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
@@ -613,3 +639,5 @@ html, body {
 .highlight, .highlight .w {
   background-color: $code-bg;
 }
+
+
