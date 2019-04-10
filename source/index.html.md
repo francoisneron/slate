@@ -166,6 +166,17 @@ alt="Integration Comparisons guide"/></a></span>
 # Affirm cards
 
 # Quickstart
+### Overview
+VCN allows you to start accepting payments with Affirm using your existing card payment architecture. With VCN, you can quickly generate a card that can then be processed as you would normally process any other card. Once a virtual card is generated, it is immediately available for use.
+
+Processing with Affirm VCN comes in three steps:
+
+1. Securely collect the customer's information
+2. Pass the customer's information to Affirm which will then redirect the customer to Affirm
+3. Once the customer confirms their loan, you will receive all the card information, in the success callback, which you can then use to process the payment
+
+The collecting of information in step is handled by you. For steps 2 and 3, you can use our mobile SDKs or browser SDK/API. Once we return the VCN and information back to you, handle the payment just like you would any other card.
+
 # PCI requirements
 # Best practices
 # Testing
