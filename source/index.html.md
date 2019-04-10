@@ -52,12 +52,18 @@ Although a custom Affirm integration requires you to either be, or hire, a devel
 # Need help
 ## Support
 ### API status
+You can monitor and subscribe to [Affirm's system status](https://status.affirm.com/).
 ### Questions
+Whether you’re a startup, small business, or global enterprise, our team is here to support you. 
 ### FAQ
+If you are curious about Affirm, please visit our [FAQ](https://www.affirm.com/help/) page.
 ## Community
 ### Slack channel
+TBD
 ### Google forum
-### StackOverflow 
+TBD
+### StackOverflow
+TBD
 ## Videos
 ### Comparisons guide
 Tradeoffs and considerations in evaluating ways to integrate with Affirm’s product.
@@ -247,11 +253,38 @@ Your API keys are available in the Dashboard.
 </aside>
 
 If you cannot see your API keys in the Dashboard, this means you do not have access to them. Contact your Affirm account’s owner and ask to be added to their team as a developer.
+
 ### Test and live modes
+
+The test and live modes function almost identically, with a few necessary differences:
+
+* In test environment, loans are not processed or sent to the banking network, but through a simulator that mimic the production environment.
+* The test environment gives you the flexibility and support to verify all the operation types that you require.
+* Review all common errors as well as errors that may occur for each operation, and ensure your application can handle them.
+* TODO:Webhooks that were not successfully acknowledged are retried *** times over a few hours (as opposed to ** hours for live mode).
+
+#### Test endpoint
+`https://www.sandbox.affirm.com`
+
+#### Prod endpoint
+`https://www.api.affirm.com`
+
+<aside class="notice">
+<b>Use only your test API keys for testing and development.</b>
+</aside>
+
 ### Keeping your keys safe
+Your private API key can be used to make any API call on behalf of your account, such as creating charges or performing refunds. You should only grant access to your API keys to those that need them. Ensure they are kept out of any version control system that you may be using.
 
 ## Libraries
 Affirm provides official API libraries for Javascript, Ruby, Python and Java. These helpful libraries wrap calls to the API and can make interfacing with Affirm easier.
+
+### Community libraries
+TODO: See if we have any open-source library.
+### Plugins for third party services
+Want to make an existing tool better with Affirm? Here are some plug-ins to help you get started without any programming needed.
+#### Developed by Affirm
+#### Developed by community
 ## Postman
 In addition to api libraries, Affirm also has a Postman collection that can be used for development or testing purposes. See the guide for information on how to install and use the collection in your Postman client.
 ## Examples
